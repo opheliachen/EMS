@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E632AA20-26EA-416C-89EB-642ADC5B5C2C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EMSSystem</RootNamespace>
+    <AssemblyName>EMSSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\ReleaseData\SmallFont\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>EMSLogo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmAddNewStudentInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddNewStudentInfo.designer.cs">
+      <DependentUpon>frmAddNewStudentInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChangeUserPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChangeUserPassword.designer.cs">
+      <DependentUpon>frmChangeUserPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmClassStudentList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClassStudentList.designer.cs">
+      <DependentUpon>frmClassStudentList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConfirmMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConfirmMessage.designer.cs">
+      <DependentUpon>frmConfirmMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEMS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEMS.designer.cs">
+      <DependentUpon>frmEMS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmErrorMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmErrorMessage.designer.cs">
+      <DependentUpon>frmErrorMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNewClassTime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNewClassTime.designer.cs">
+      <DependentUpon>frmNewClassTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPaymentDiscount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPaymentDiscount.designer.cs">
+      <DependentUpon>frmPaymentDiscount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrintNeedToPayNotice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrintNeedToPayNotice.designer.cs">
+      <DependentUpon>frmPrintNeedToPayNotice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSaftyChecker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSaftyChecker.designer.cs">
+      <DependentUpon>frmSaftyChecker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSearchClassData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSearchClassData.designer.cs">
+      <DependentUpon>frmSearchClassData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSearchRecordData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSearchRecordData.designer.cs">
+      <DependentUpon>frmSearchRecordData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSearchStudentData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSearchStudentData.designer.cs">
+      <DependentUpon>frmSearchStudentData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelectPersonalOrClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelectPersonalOrClass.designer.cs">
+      <DependentUpon>frmSelectPersonalOrClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmShowAllClasses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmShowAllClasses.designer.cs">
+      <DependentUpon>frmShowAllClasses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmShowAllStudents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmShowAllStudents.designer.cs">
+      <DependentUpon>frmShowAllStudents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmShowStudentRefundClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmShowStudentRefundClass.Designer.cs">
+      <DependentUpon>frmShowStudentRefundClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStudentAddNewClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStudentAddNewClass.designer.cs">
+      <DependentUpon>frmStudentAddNewClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStudentPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStudentPayment.designer.cs">
+      <DependentUpon>frmStudentPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStudentPaymentHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStudentPaymentHistory.designer.cs">
+      <DependentUpon>frmStudentPaymentHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStudentPrepaid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStudentPrepaid.designer.cs">
+      <DependentUpon>frmStudentPrepaid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAddNewStudentInfo.resx">
+      <DependentUpon>frmAddNewStudentInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChangeUserPassword.resx">
+      <DependentUpon>frmChangeUserPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClassStudentList.resx">
+      <DependentUpon>frmClassStudentList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConfirmMessage.resx">
+      <DependentUpon>frmConfirmMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEMS.resx">
+      <DependentUpon>frmEMS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmErrorMessage.resx">
+      <DependentUpon>frmErrorMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNewClassTime.resx">
+      <DependentUpon>frmNewClassTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPaymentDiscount.resx">
+      <DependentUpon>frmPaymentDiscount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrintNeedToPayNotice.resx">
+      <DependentUpon>frmPrintNeedToPayNotice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSaftyChecker.resx">
+      <DependentUpon>frmSaftyChecker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSearchClassData.resx">
+      <DependentUpon>frmSearchClassData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSearchRecordData.resx">
+      <DependentUpon>frmSearchRecordData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSearchStudentData.resx">
+      <DependentUpon>frmSearchStudentData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelectPersonalOrClass.resx">
+      <DependentUpon>frmSelectPersonalOrClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmShowAllClasses.resx">
+      <DependentUpon>frmShowAllClasses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmShowAllStudents.resx">
+      <DependentUpon>frmShowAllStudents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmShowStudentRefundClass.resx">
+      <DependentUpon>frmShowStudentRefundClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStudentAddNewClass.resx">
+      <DependentUpon>frmStudentAddNewClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStudentPayment.resx">
+      <DependentUpon>frmStudentPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStudentPaymentHistory.resx">
+      <DependentUpon>frmStudentPaymentHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStudentPrepaid.resx">
+      <DependentUpon>frmStudentPrepaid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="..\App.config">
+      <Link>App.config</Link>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="EMSLogo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClassLibrary\ClassLibrary.csproj">
+      <Project>{193B15D0-A365-441D-AEDA-1F657036F2BA}</Project>
+      <Name>ClassLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Functions\Functions.csproj">
+      <Project>{6C102736-B536-418B-A604-41FB4DDA626F}</Project>
+      <Name>Functions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StaticFunctions\StaticFunctions.csproj">
+      <Project>{C7F3B172-DD48-490E-B09B-0BFF9D885B5A}</Project>
+      <Name>StaticFunctions</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
