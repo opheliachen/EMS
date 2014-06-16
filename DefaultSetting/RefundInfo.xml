@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--Record Refund Info-->
+<Refunds>
+  <Refund>
+    <ID>0</ID>
+    <Event>退費事件</Event>
+    <RefundMoney>3000</RefundMoney>
+    <TempRefundMoney>0</TempRefundMoney>
+    <RefundDiscount>0</RefundDiscount>
+    <StudentID>00006000</StudentID>
+  </Refund>
+</Refunds>
